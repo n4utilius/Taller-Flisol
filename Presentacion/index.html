@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <!--meta name="viewport" content="width=1024" /-->
+   
+    <title>Javascrip - The Ninja Way</title>
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/add.css" rel="stylesheet" />
+    </head>
+
+<body class="impress-not-supported">
+        <div class="fallback-message">
+            <p>¿Por qué no intentas usar las versiones actuales de 
+                <b>Chrome</b>, <b>Safari</b> o <b>Firefox</b> ?
+            </p>
+        </div >
+   
+        <div id="impress">
+
+            <div id="start" class="step" data-x="0" data-y="0" data-z="40">
+                <img src="img/shuriken.jpg" id="shu">
+                <img src='img/paisaje.jpg' width="468" height="500" />
+                <h1>Javascript: The Ninja Way</h1>
+            </div>
+
+            <div id="ninja-cool" class="step" data-x="450" data-y="150" data-scale="0.15">
+                <img src="img/ninja-1.jpg">
+                <p>be ninja is cool!</p>
+            </div>
+
+            <div id="js-cool" class="step" data-x="523" data-y="131" data-z="2" data-scale="0.003">
+                <p class="only">and javascript is cool too!!!</p>
+            </div>
+
+            <div id="character" class="step" data-x="350" data-y="110" data-z="2" data-scale="0.003">
+                <img src="img/ninja-2.jpg">
+                <p>characteristics</p>
+            </div>
+                <div id="poo" class="step" data-x="10" data-y="0" data-z="6" data-scale="0.000009">
+                    <p class="only">Javascript != POO</p>
+                </div>
+
+                <div id="java" class="step" data-x="0" data-y="0" data-z="4" data-scale="0.00009">
+                    <p class="only">Javascript != Java</p>
+                </div>
+
+                <div id="pf" class="step" data-x="10" data-y="10" data-z="10" data-scale="0.0009">
+                    <p class="only">Javascript == PF</p>
+                </div>
+
+                <div id="poe" class="step" data-x="0" data-y="10" data-z="8" data-scale="0.009">
+                    <p class="only">Javascript == POE</p>
+                </div>
+
+
+                <div id="easy" class="step" data-x="5" data-y="5" data-z="12" data-scale="0.09">
+                    <img src="img/easy.gif" width="600" height="339">
+                </div>
+
+            <div id="examples" class="step" data-x="523" data-y="61" data-z="2" data-scale="0.003">
+                <p class="only">examples</p>
+            </div>
+            
+                <div id="ex-eop" class="step" data-x="600" data-y="41" data-z="2" data-scale="0.003" style="z-index:1">
+                    <p class="examples">I- Event Oriented</p>
+<pre>
+    &lt;input type="button" value="Click" onclick="alert('Hello USER!!!');" /&gt;
+    function muestraMensaje() { 
+        alert(''Hello USER!!!'); 
+    }
+    &lt;input type="button" value="Click" onclick="muestraMensaje()" /&gt;
+</pre>
+                </div>                
+
+                <div id="ex-pf" class="step" data-x="600" data-y="41" data-z="2" data-scale="0.03" style="z-index:0">
+                    <p class="examples">II- Funcional</p>
+<pre>
+    http.createServer(function (req, res) {
+        res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.end('Hello World\n');
+    }).listen(1337, '127.0.0.1');
+</pre>
+                </div>
+
+                <div id="ex-pop" class="step" data-x="600" data-y="31" data-z="2" data-scale="0.3" style="z-index:-1">
+                    <p class="examples">III- Prototype-Oriented</p>
+<pre>
+    function Factura(idFactura, idCliente) {
+        this.idFactura = idFactura;
+        this.idCliente = idCliente;
+        this.muestraCliente = function() { alert(this.idCliente);} 
+        this.muestraId = function() { alert(this.idFactura); }
+    }
+    var laFactura = new Factura(3, 7);
+    Object.extend = function(dest, fuen) {
+      for (var property in fuente) {
+        destino[property] = fuente[property]
+      } return destination;
+    }
+</pre>
+                </div>
+
+            <div id="ecosistem" class="step" data-x="-80" data-y="-200" data-z="16" data-scale=".1">
+                <p class="only">ecosistem</p>    
+            </div>
+
+                <div >
+                    <img src="img/web.png" class="step" data-x="-100" data-y="-100" data-z="2" data-scale=".01"/>
+                </div>
+
+                <div >
+                    <img src="img/server.png" class="step" data-x="-120" data-y="-110" data-z="2" data-scale=".001"/>
+                </div>
+
+                <div >
+                    <img src="img/database.png" class="step" data-x="-100" data-y="-120" data-z="2" data-scale=".0001"/>
+                </div>
+
+                <div >
+                    <img src="img/mobile.png" class="step" data-x="-120" data-y="-130" data-z="2" data-scale=".00001"/>
+                </div>
+
+                
+
+               
+    </div>
+    <script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+    </script>
+
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+
+</body>
+</html>

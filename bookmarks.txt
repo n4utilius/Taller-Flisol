@@ -1,0 +1,18 @@
+	
+	http://prezi.com/-mdjoyc0o9bj/javascript-the-ninja-way/
+
+	http://www.codecademy.com/#!/exercises/0
+	http://siedrix.com/
+	http://mejorando.la/
+
+	El Futuro de Javascript: Dart, CoffeeScript y Node.js 
+	http://www.youtube.com/watch?v=GGV2IVKUiKU
+
+	Learning Javascript with Object Graphs
+	http://howtonode.org/object-graphs
+
+	Understanding JavaScript OOP
+	http://killdream.github.com/blog/2011/10/understanding-javascript-oop/index.html
+
+	JavaScript Garden
+	http://bonsaiden.github.com/JavaScript-Garden/

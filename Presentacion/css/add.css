@@ -1,0 +1,76 @@
+.step { position: relative;
+		 padding: 40px;
+		 margin: 20px auto;
+
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing:    border-box;
+		 -ms-box-sizing:     border-box;
+		 -o-box-sizing:      border-box;
+		 box-sizing:         border-box;
+
+		 font-size: 2em;
+		 line-height: 1.5;
+		 display: block;
+		 width: 1200px;
+		 height: 700px;
+		 max-height: 700px;
+		 padding: 40px 60px;
+
+		 background-color: white;
+		 border-bottom: 4px solid rgba(0, 0, 0, .3);
+		 border-top: 4px solid rgba(0, 0, 0, .3);
+		 border-radius: 30px;
+		 box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+		 text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+		 font-size: 2.5em;
+		 letter-spacing: 0px; }
+
+.step h1 { position: absolute;
+		   text-shadow: -1px -1px 2px rgba(20,20,20,0.5);
+		   z-index:0;
+		   font-size: 3em;
+		   width:784px;
+		   line-height: 0.7em;
+		   margin-top: 100px;   }
+
+.step img{ z-index:-1; float:left; }
+
+.step p{ font-family:"LoveYaLikeASister";
+		 font-size:2em;
+		 padding-right: 20px; }
+
+.step pre{	font-family:"UbuntuMono"; 
+			font-size:0.6em;
+			float:left; 
+			padding-left: 30px;} 
+
+p.only{ margin:230px 60px;}
+
+#start{ padding-top: 100px;}
+
+#start #shu{ position: absolute;
+			 top:370px;
+			 left:428px; }
+
+#start img { margin-top:-80px; float:right;}
+
+#ninja-cool p{ margin-top:80px; }
+
+#ninja-cool img{ float: right; }
+
+#js-cool p{	font-size:1.5em;  }
+
+#character p{ margin-top: 350px }
+
+#easy img { margin:120px 275px; }
+
+p.examples{ font-size:1.35em;}
+
+#me{padding: 150px 20px;}
+#me img{ float:right;}
+#me p { display: inline; float: right; }
+#me pre{ font-size:1.5em; 
+		 margin-left: -20px;
+		 float:right;}
+
+#overview { display: none }

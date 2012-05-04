@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<title>Online Chat</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+	</script>
+	
+	<script src="http://localhost:6969/socket.io/socket.io.js">
+	</script>
+	<style>
+		body
+		{
+		    color: #333;
+		    background: #333;
+		    font-family: "Helvetica", Arial;
+		    font-size: 14px;
+		    text-align: center;
+		}
+		.container
+		{
+		    background: #ccc;
+		    border-radius: 1em;
+		    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+		    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+		    margin: 1em auto;
+		    padding: 1em;
+		    width: 90%;
+		}
+		 
+		input
+		{
+		    display: block;
+		    font-size: 12px;
+		    margin: 1em auto;
+		    padding: 0.5em;
+		    width: 95%;
+		}
+		 
+		span
+		{
+		    display: block;
+		    font-size: 12px;
+		    margin: 1em auto;
+		    padding: 0.5em;
+		    width: 95%;
+		    text-align: left;
+		}
+	</style>
+	
+<script>
+	var websocket = io.connect("http://localhost:8085");
+	$(document).on("ready", iniciar);
+	
+	function iniciar(){
+		websocket.on("nombreDesdeServidor", recibirMensaje);
+		$("#formulario").on("submit",enviarMensaje);
+	}
+	
+	function enviarMensaje(e){
+		e.preventDefault();
+		websocket.emit("nuevoNombre", $("#nombre").val() );
+		$("#nombre").attr("value","");
+	}
+	
+	function recibirMensaje(datosServidor){
+		$("#chat").append(datosServidor + "<br />");
+	}
+	
+</script>
+</head>
+
+<body>
+	<header><h1>@n4utilius</h1></header>
+	<form id="formulario">
+		<input type="text" maxlength="10" id="nombre" 
+			placeholder="escribe"
+			required />
+		<div id="chat"><div>
+	</form>
+</body>
+</html>
