@@ -1,9 +1,8 @@
 	
-	http://prezi.com/-mdjoyc0o9bj/javascript-the-ninja-way/
+	http://n4utilius.appspot.com/presentaciones/js-node
 
 	http://www.codecademy.com/#!/exercises/0
 	http://siedrix.com/
-	http://mejorando.la/
 
 	El Futuro de Javascript: Dart, CoffeeScript y Node.js 
 	http://www.youtube.com/watch?v=GGV2IVKUiKU
@@ -16,3 +15,6 @@
 
 	JavaScript Garden
 	http://bonsaiden.github.com/JavaScript-Garden/
+
+	PL101
+	http://nathansuniversity.com/jsreview.html
